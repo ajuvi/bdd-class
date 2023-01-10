@@ -3,36 +3,41 @@ DROP TABLE especie CASCADE CONSTRAINTS;
 DROP TABLE animal CASCADE CONSTRAINTS;
 
 CREATE TABLE zoo (
-	id NUMBER(7) PRIMARY KEY,
+	id NUMBER(7),
 	nom VARCHAR2(50),
 	ciutat VARCHAR2(30),
 	pais VARCHAR2(50),
 	grandaria NUMBER(6,2),
-	pressupost NUMBER(12,2)
+	pressupost NUMBER(12,2),
+    CONSTRAINT pk_zoo
+        PRIMARY KEY(id) 
 );
 
 CREATE TABLE especie (
-	id NUMBER(7) PRIMARY KEY,
+	id NUMBER(7),
 	nom_vulgar VARCHAR2(20),
 	nom_cientific VARCHAR2(50),
 	familia VARCHAR2(20),
-	perill_extincio NUMBER(1)
+	perill_extincio NUMBER(1),
+    CONSTRAINT pk_especie
+        PRIMARY KEY(id)
 );
 
 CREATE TABLE animal (
-	id NUMBER(7) PRIMARY KEY,
+	id NUMBER(7),
 	nom VARCHAR2(20),
 	sexe VARCHAR2(1),
 	data_naixement DATE,
 	pais VARCHAR2(50),
 	continent VARCHAR2(10),
     especie_id NUMBER(7),
-    ADD zoo_id NUMBER(7),
-
-    ADD CONSTRAINT fk_especie_id
-	    FOREIGN KEY (especie_id) REFERENCES especie(id),
-    ADD CONSTRAINT fk_zoo_id
-	    FOREIGN KEY (zoo_id) REFERENCES zoo(id)
+    zoo_id NUMBER(7),
+    CONSTRAINT pk_animal
+        PRIMARY KEY(id),
+    CONSTRAINT fk_zoo_id
+	    FOREIGN KEY(zoo_id) REFERENCES zoo(id),    
+    CONSTRAINT fk_especie_id
+	    FOREIGN KEY(especie_id) REFERENCES especie(id)
 );
 
 
