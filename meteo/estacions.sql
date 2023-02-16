@@ -1,0 +1,1 @@
+INSERT INTO  estacio(id,nom,latitud,longitud,altitud,usuari) VALUES(1,'GIRONA AEROPUERTO',41.897816,2.765832,143,USER);
