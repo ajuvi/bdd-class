@@ -17,6 +17,7 @@ DROP TABLE horari CASCADE CONSTRAINTS;
 DROP TABLE visita CASCADE CONSTRAINTS;
 
 drop sequence horari_seq;
+drop sequence visita_seq;
 
 -- Creació de taules 
 
