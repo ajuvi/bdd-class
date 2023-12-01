@@ -269,3 +269,4 @@ alter table departments enable constraint dept_mgr_fk;
 
 alter table employees enable constraint emp_dept_fk;
 
+commit;
