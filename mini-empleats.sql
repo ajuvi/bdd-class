@@ -73,5 +73,8 @@ insert into empl values
 (7934,'MUNOZ','EMPLEAT',7782,to_date('23-01-1982','dd-mm-yyyy'),169000,null,10);
 insert into empl values
 (8100,'ARNAU','EMPLEAT',7902,to_date('14-12-2023','dd-mm-yyyy'),24000,null,null);
+insert into empl values
+(8200,'ALBA','EMPLEAT',null,to_date('14-12-2023','dd-mm-yyyy'),1000000,null,null);
+
 -- Confirmar els canvis
 commit;
