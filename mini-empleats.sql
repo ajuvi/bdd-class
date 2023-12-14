@@ -70,3 +70,6 @@ insert into empl values
 (7900,'JIMENO','EMPLEAT',7698,to_date('03-12-1981','dd-mm-yyyy'),123500,null,30);
 insert into empl values
 (7934,'MUNOZ','EMPLEAT',7782,to_date('23-01-1982','dd-mm-yyyy'),169000,null,10);
+
+-- Confirmar els canvis
+commit;

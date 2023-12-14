@@ -59,3 +59,6 @@ INSERT INTO animal VALUES (5, 'Syrup', 'F', TO_DATE('05/15/2014', 'MM/DD/YYYY'),
 INSERT INTO animal VALUES (6, 'Loki', 'M', TO_DATE('06/20/2014', 'MM/DD/YYYY'), 'Regne Unit','Europa', 2, 2);
 INSERT INTO animal VALUES (7, 'Oreo', 'F', TO_DATE('12/27/2015', 'MM/DD/YYYY'), 'Espanya','Europa', 3, 3);
 INSERT INTO animal VALUES (8, 'Ace', 'M', TO_DATE('11/10/2015', 'MM/DD/YYYY'), 'Espanya','Europa', 3, 3);
+
+-- Confimar els canvis
+commit;

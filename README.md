@@ -1,1 +1,1 @@
-# bdd-class
+# Material per a mòdul de bases de dades
