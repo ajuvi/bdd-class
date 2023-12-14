@@ -40,6 +40,7 @@ insert into dept values (10,'Comptabilitat','Sevilla');
 insert into dept values (20,'Investigacio','Madrid');
 insert into dept values (30,'Vendes','Barcelona');
 insert into dept values (40,'Produccio','Bilbao');
+insert into dept values (50,'Testing','Girona');
 
 -- Insercci de dades a la taula EMPL
 insert into empl values
@@ -70,6 +71,7 @@ insert into empl values
 (7900,'JIMENO','EMPLEAT',7698,to_date('03-12-1981','dd-mm-yyyy'),123500,null,30);
 insert into empl values
 (7934,'MUNOZ','EMPLEAT',7782,to_date('23-01-1982','dd-mm-yyyy'),169000,null,10);
-
+insert into empl values
+(8100,'ARNAU','EMPLEAT',7902,to_date('14-12-2023','dd-mm-yyyy'),24000,null,null);
 -- Confirmar els canvis
 commit;
