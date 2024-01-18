@@ -103,10 +103,10 @@ INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descri
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (5,'Lluís','Gutierrez','llguti','12345','lgutierrez@gmail.com','626877955',TO_DATE('25/6/1996','DD/MM/YYYY'),'Estic al mini-twitter.');
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (6,'Artur','Juvé','ajuve','54321','ajuve@gmail.com','636889958',TO_DATE('19/10/2000','DD/MM/YYYY'),'Estic al mini-twitter.');
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (7,'Roser','Ramírez','rrami','12345','roser62@telefonica.com','',TO_DATE('8/1/1962','DD/MM/YYYY'),'Quan fa sol tot és millor');
-INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (8,'Maria','Pérez','marper','12345','mariaperez@gmail.com','626123955',TO_DATE('29/12/1993','DD/MM/YYYY'),'Estic al mini-twitter.');
+INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (8,'Maria','Pérez','marper','12345','mariaperez@gmail.com','626123955',TO_DATE('29/12/1953','DD/MM/YYYY'),'Estic al mini-twitter.');
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (9,'Josep','Güell','jguai','12345','Josep.Guell@gmail.com','626898555',TO_DATE('13/11/2003','DD/MM/YYYY'),'Estic al mini-twitter.');
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (10,'Jordi','Garcia','jorgar','12345','Jordi.Garcia@hotmail.com','',TO_DATE('13/7/1996','DD/MM/YYYY'),':)');
-INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (11,'Isabel','Nadal','isanadal','12345','Isabel.Nadal@gmail.com','626885552',TO_DATE('22/3/1997','DD/MM/YYYY'),'Estic al mini-twitter.');
+INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (11,'Isabel','Nadal','isanadal','12345','Isabel.Nadal@gmail.com','626885552',TO_DATE('22/3/2014','DD/MM/YYYY'),'Estic al mini-twitter.');
 
 INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (1,'missatge1','Lorem ipsum dolor sit amet 1',TO_DATE('1/1/2022','DD/MM/YYYY'),5);
 INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (2,'missatge2','Lorem ipsum dolor sit amet 2',TO_DATE('2/1/2022','DD/MM/YYYY'),2);
@@ -134,6 +134,7 @@ INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (23,'missatge23','Lore
 INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (24,'missatge24','Lorem ipsum dolor sit amet 24',TO_DATE('17/2/2022','DD/MM/YYYY'),3);
 
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,3);
+INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,5);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,8);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,10);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (2,3);
@@ -154,8 +155,13 @@ INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (8,3);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (8,10);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (9,4);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (9,10);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,5);
+INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,1);
+INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,2);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,3);
+INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,4);
+INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,5);
+INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,6);
+INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,7);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,8);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,9);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,7);
@@ -182,3 +188,4 @@ INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (10,19,TO_DATE('9/2
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (10,5,TO_DATE('8/1/2022','DD/MM/YYYY'),'(Y)');
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (10,7,TO_DATE('3/2/2022','DD/MM/YYYY'),':)');
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (11,7,TO_DATE('19/1/2022','DD/MM/YYYY'),':)');
+INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (11,5,TO_DATE('20/1/2022','DD/MM/YYYY'),':D');
