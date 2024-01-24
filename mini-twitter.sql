@@ -134,37 +134,23 @@ INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (23,'missatge23','Lore
 INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (24,'missatge24','Lorem ipsum dolor sit amet 24',TO_DATE('17/2/2022','DD/MM/YYYY'),3);
 
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,3);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,5);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,8);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (1,10);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (2,3);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (2,5);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (2,10);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (4,10);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (4,11);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (4,5);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (4,9);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (5,10);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (6,3);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (6,7);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (6,1);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (6,5);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (6,10);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (8,1);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (8,3);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (8,10);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (9,4);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (9,10);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,1);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,2);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,3);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,4);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,5);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,6);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,7);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,8);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,9);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (11,10);
 
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (1,7,TO_DATE('13/1/2022','DD/MM/YYYY'),'(Y)');
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (1,18,TO_DATE('10/2/2022','DD/MM/YYYY'),':D');
