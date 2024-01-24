@@ -164,7 +164,6 @@ INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,6);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,7);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,8);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,9);
-INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (10,7);
 INSERT INTO seguits(usuari_id1,usuari_id2) VALUES (11,10);
 
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (1,7,TO_DATE('13/1/2022','DD/MM/YYYY'),'(Y)');
