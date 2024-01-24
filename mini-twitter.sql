@@ -189,3 +189,6 @@ INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (10,5,TO_DATE('8/1/
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (10,7,TO_DATE('3/2/2022','DD/MM/YYYY'),':)');
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (11,7,TO_DATE('19/1/2022','DD/MM/YYYY'),':)');
 INSERT INTO likes(usuari_id,missatge_id, data, emoti) VALUES (11,5,TO_DATE('20/1/2022','DD/MM/YYYY'),':D');
+
+
+COMMIT;
