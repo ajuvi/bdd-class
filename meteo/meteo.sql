@@ -20,3 +20,7 @@ CREATE TABLE mesura(
 	estacio_id NUMBER(11),
 	CONSTRAINT fk_mesura_ref_estacio FOREIGN KEY(estacio_id) REFERENCES estacio(id)
 );
+
+CREATE SEQUENCE seq_mesura
+	START WITH 1
+	INCREMENT BY 1;
