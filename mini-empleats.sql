@@ -22,6 +22,7 @@ create table empl(
     salari   number(11,2),
     comissio number(11,2),
     dept_id number(2),
+    actiu number(1),
 
     constraint pk_empl
         primary key(id),
@@ -30,7 +31,9 @@ create table empl(
         references dept(id),
     constraint fk_empl_dir
         foreign key (dir)
-        references empl(id)
+        references empl(id),
+    constraint ck_actiu
+        CHECK(actiu IN (0,1))
 );
 
 desc empl;
