@@ -19,7 +19,7 @@ create table empl(
     id 	number(4),
     nom  	varchar2(16) not null,
     ofici	varchar2(10),
-    dir  	number(4),
+    manager  number(4),
     datalt   date default sysdate,
     datanaix   date not null,
     salari   number(11,2),
@@ -33,8 +33,8 @@ create table empl(
      constraint fk_empl_dept_id
         foreign key (dept_id)
         references dept(id),
-    constraint fk_empl_dir
-        foreign key (dir)
+    constraint fk_empl_manager
+        foreign key (manager)
         references empl(id),
     constraint ck_actiu
         CHECK(actiu IN (0,1))
