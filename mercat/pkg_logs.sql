@@ -51,19 +51,19 @@ AS
     PROCEDURE log (p_missatge logs.missatge%TYPE)
     AS  
     BEGIN    
-        pkg_logs.priv_log ('info',p_missatge);
+        pkg_logs.priv_log ('i',p_missatge);
     END;
 
     PROCEDURE error (p_missatge logs.missatge%TYPE)
     AS  
     BEGIN    
-        pkg_logs.priv_log ('error',p_missatge);
+        pkg_logs.priv_log ('e',p_missatge);
     END;
 
     PROCEDURE warn (p_missatge logs.missatge%TYPE)
     AS  
     BEGIN    
-        pkg_logs.priv_log ('warn',p_missatge);
+        pkg_logs.priv_log ('w',p_missatge);
     END;
 
 END pkg_logs;
