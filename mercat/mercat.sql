@@ -56,6 +56,8 @@ CREATE TABLE client(
     compte VARCHAR2(50),
     direccio VARCHAR(500),
     empresa VARCHAR2(200),
+    dataCreat DATE DEFAULT SYSDATE,
+    dataModificat DATE,
     CONSTRAINT pk_client 
         PRIMARY KEY(id), 
     CONSTRAINT ck_client_actiu 
@@ -78,6 +80,8 @@ CREATE TABLE empleat(
     deptartament_id NUMBER(11),
     actiu NUMBER(1) DEFAULT 1,
     compte VARCHAR2(50),
+    dataCreat DATE DEFAULT SYSDATE,
+    dataModificat DATE,    
     CONSTRAINT pk_empleat
         PRIMARY KEY(id),
      CONSTRAINT fk_empleat_deptament_id
@@ -104,6 +108,8 @@ CREATE TABLE producte(
     datalt   DATE DEFAULT SYSDATE,
     actiu NUMBER(1) DEFAULT 1,
     descripcio VARCHAR2(500),
+    dataCreat DATE DEFAULT SYSDATE,
+    dataModificat DATE,    
     CONSTRAINT pk_producte 
         PRIMARY KEY(id),
     CONSTRAINT ck_producte_actiu
@@ -121,6 +127,8 @@ CREATE TABLE comanda(
 	direccio VARCHAR(500),
     client_id NUMBER(11),
 	empleat_id NUMBER(11),
+    dataCreat DATE DEFAULT SYSDATE,
+    dataModificat DATE,    
     actiu NUMBER(1) DEFAULT 1,    
     CONSTRAINT pk_comanda 
         PRIMARY KEY(id),
@@ -144,6 +152,8 @@ CREATE TABLE linia_comanda(
 	unitats NUMBER(11),
     preuUnitari NUMBER(11,2),
     descompte NUMBER(5,2),
+    dataCreat DATE DEFAULT SYSDATE,
+    dataModificat DATE,    
 	CONSTRAINT pk_linia_comanda 
         PRIMARY KEY(comanda_id,numLinia),
 	CONSTRAINT fk_linia_comanda_producte 
