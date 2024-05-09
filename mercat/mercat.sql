@@ -121,6 +121,7 @@ CREATE TABLE comanda(
 	direccio VARCHAR(500),
     client_id NUMBER(11),
 	empleat_id NUMBER(11),
+    actiu NUMBER(1) DEFAULT 1,    
     CONSTRAINT pk_comanda 
         PRIMARY KEY(id),
     CONSTRAINT fk_comanda_client 
@@ -129,6 +130,8 @@ CREATE TABLE comanda(
 	CONSTRAINT fk_comanda_empleat 
         FOREIGN KEY(empleat_id) 
         REFERENCES empleat(id),
+    CONSTRAINT ck_comanda_actiu
+        CHECK(actiu IN (0,1)),        
     CONSTRAINT ck_comanda_pagada
         CHECK(pagada IN (0,1))
 );
@@ -808,4 +811,3 @@ VALUES(50, TO_DATE('2024-05-05', 'YYYY-MM-DD'), 'Pendent', NULL, 'Avinguda Diago
 INSERT INTO linia_comanda(numLinia, comanda_id, producte_id, unitats, preuUnitari, descompte)
 VALUES(1, 50, 15, 10, 149.99, 0);
 
-COMMIT;
