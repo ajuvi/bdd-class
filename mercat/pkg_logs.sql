@@ -31,6 +31,7 @@ CREATE OR REPLACE PACKAGE pkg_logs AS
     /*procediment per a afegir nous logs*/
     PROCEDURE log (p_missatge logs.missatge%TYPE);
     PROCEDURE error (p_missatge logs.missatge%TYPE);    
+    PROCEDURE warn (p_missatge logs.missatge%TYPE);   
     
     /*procediment per a mostrar els logs*/
     --PROCEDURE print (p_id logs.id%TYPE);   
@@ -57,6 +58,12 @@ AS
     AS  
     BEGIN    
         pkg_logs.priv_log ('error',p_missatge);
+    END;
+
+    PROCEDURE warn (p_missatge logs.missatge%TYPE)
+    AS  
+    BEGIN    
+        pkg_logs.priv_log ('warn',p_missatge);
     END;
 
 END pkg_logs;
