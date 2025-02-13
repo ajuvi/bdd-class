@@ -49,9 +49,9 @@ CREATE TABLE Bloquejats(
 	u1 int,
 	u2 int,
 	data DATETIME,
-	CONSTRAINT pk_seguit PRIMARY KEY(u1, u2),
-	CONSTRAINT fk_seguit_ref_u1 FOREIGN KEY(u1) REFERENCES usuari(id),
-	CONSTRAINT fk_seguit_ref_u2 FOREIGN KEY(u2) REFERENCES usuari(id)  
+	CONSTRAINT pk_bloquejat PRIMARY KEY(u1, u2),
+	CONSTRAINT fk_bloquejat_ref_u1 FOREIGN KEY(u1) REFERENCES usuari(id),
+	CONSTRAINT fk_bloquejat_ref_u2 FOREIGN KEY(u2) REFERENCES usuari(id)  
 );
 
 CREATE TABLE likes (
