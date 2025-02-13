@@ -63,6 +63,7 @@ CREATE TABLE likes (
 	CONSTRAINT fk_like_ref_missatge_id FOREIGN KEY(missatge_id) REFERENCES missatge(id)
 );
 
+#Inserció de dades
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (1,'Pere','Pi','perepi','12345','Pere.Pi@gmail.com','626889955','2006-02-18','Hola què tal?!?');  
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (2,'Mercè','Puig','merpuig','12345','merceditas@yahoo.com','626849955','1995-08-05','Estic al mini-twitter.');
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (3,'Joan','Montagut','jmontagut','12345','Joan.Montagut@gmail.com','626889555','1983-11-21','Estic al mini-twitter.');
@@ -74,7 +75,6 @@ INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descri
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (9,'Josep','Güell','jguai','12345','Josep.Guell@gmail.com','626898555','2003-11-13','Estic al mini-twitter.');
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (10,'Jordi','Garcia','jorgar','12345','Jordi.Garcia@hotmail.com','6296885589','1996-07-13',':)');
 INSERT INTO usuari(id,nom,cognom,username,password,email,telefon,dataNaix,descripcio) VALUES (11,'Isabel','Nadal','isanadal','12345','Isabel.Nadal@gmail.com','626885552','2014-03-22','Estic al mini-twitter.');
-
 
 INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (1,'missatge1','Lorem ipsum dolor sit amet 1','2022-01-01',5);
 INSERT INTO missatge(id,titol,text,data,usuari_id) VALUES (2,'missatge2','Lorem ipsum dolor sit amet 2','2022-01-02',2);
