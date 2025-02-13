@@ -23,7 +23,8 @@ CREATE TABLE Usuari(
 	email VARCHAR(50) unique not null,
 	telefon VARCHAR(20) unique,
 	descripcio VARCHAR(200),
-	dataNaix DATETIME
+	dataNaix DATETIME,
+	actiu BOOLEAN default true
 );
 
 CREATE TABLE Missatge(
