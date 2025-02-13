@@ -1,5 +1,5 @@
-CREATE DATABASE zoo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE zoo;
+CREATE DATABASE db_zoo_csv CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE db_zoo_csv;
 
 DROP TABLE IF EXISTS zoo;
 DROP TABLE IF EXISTS especie;

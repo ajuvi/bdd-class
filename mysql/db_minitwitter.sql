@@ -10,6 +10,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE Usuari;
 DROP TABLE Missatge;
 DROP TABLE Seguits;
+DROP TABLE BLoquejats;
 DROP TABLE Likes;
 
 #Creació de taules
@@ -35,6 +36,15 @@ CREATE TABLE Missatge(
 );
 
 CREATE TABLE Seguits(
+	u1 int,
+	u2 int,
+	data DATETIME,
+	CONSTRAINT pk_seguit PRIMARY KEY(u1, u2),
+	CONSTRAINT fk_seguit_ref_u1 FOREIGN KEY(u1) REFERENCES usuari(id),
+	CONSTRAINT fk_seguit_ref_u2 FOREIGN KEY(u2) REFERENCES usuari(id)  
+);
+
+CREATE TABLE Bloquejats(
 	u1 int,
 	u2 int,
 	data DATETIME,
